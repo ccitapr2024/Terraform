@@ -12,7 +12,7 @@ resource "aws_s3_bucket" "ccit_s3new" {
   tags = { Name = "ccit-public-bucket" }
 }
 resource "aws_s3_bucket" "ccit_s3new1" {
-  bucket = "ccit-public-bucket1"
+  bucket = "ccit-public-bucket2"
   tags = { Name = "ccit-public-bucket" }
 }
 output "s3_bucket_name" {

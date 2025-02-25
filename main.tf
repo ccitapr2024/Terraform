@@ -20,15 +20,6 @@ resource "aws_s3_bucket" "ccit_s3new2" {
   tags = { Name = "ccit-public-bucket" }
 }
 
-resource "aws_instance" "firstinstance" {
-  ami           = "ami-0a19d948cf5ce40b2"
-  instance_type = "t3.micro"
-  count = 5
-  tags = {
-    Name = "MyEC2Instance"
-  }
-}
-
 
 output "s3_bucket_name" {
 description = "The name of the created S3 bucket"
